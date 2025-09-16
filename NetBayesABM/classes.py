@@ -1,10 +1,57 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-NetBayesABM - Agent classes
+NetBayesABM - Agent and Environment Classes
+===========================================
 
-This module defines the agent classes (plants and pollinators)
-used in the agent-based models of plant–pollinator networks.
+This module defines the core classes for representing agents
+(plants and pollinators) and their environments in the 
+agent-based models (ABM) of plant–pollinator networks.
+
+Classes
+-------
+Agent_Plant
+    Dataclass representing a plant agent with species information and spatial coordinates.
+Agent_Pol
+    Dataclass representing a pollinator agent with species information, 
+    spatial coordinates, and an interaction radius. Includes a method for random movement.
+Environment_plant
+    Container class that builds a list of `Agent_Plant` objects from a DataFrame.
+    Supports three modes of plant positioning: 
+    - as provided in the DataFrame
+    - random within spatial boundaries
+    - regular grid within spatial boundaries
+Environment_pol
+    Container class that builds a list of `Agent_Pol` objects from a DataFrame.
+
+Typical workflow
+----------------
+1. Load empirical plant and pollinator data into pandas DataFrames.
+2. Initialize agents with `Environment_plant` and `Environment_pol`.
+3. Use the generated agent lists (`plant_list`, `pol_list`) as inputs 
+   for the modelling functions in `modelling.py`.
+
+Notes
+-----
+- These classes encapsulate the basic agent properties and their environment,
+  but do not define network interactions or simulation dynamics (handled in `modelling.py`).
+- Agent movement and interaction rules can be extended by adding methods to `Agent_Pol`
+  or creating new environment classes.
+
+Examples
+--------
+>>> import pandas as pd
+>>> from netbayesabm.classes import Environment_plant, Environment_pol
+>>> df_plants = pd.DataFrame({
+...     "Plant_id": [1, 2],
+...     "Plant_sp": ["rose", "daisy"],
+...     "X": [0.0, 1.0],
+...     "Y": [0.0, 1.0],
+...     "Plant_sp_complete": ["Rosa sp.", "Bellis perennis"]
+... })
+>>> env_plants = Environment_plant(df_plants)
+>>> len(env_plants.plant_list)
+2
 """
 
 from dataclasses import dataclass

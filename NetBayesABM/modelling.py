@@ -1,9 +1,40 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue Apr 16 12:04:42 2024
+NetBayesABM - Modelling Module
+==============================
 
-@author: galeanojav
+This module provides the core functions to build and simulate
+agent-based models (ABM) of plant–pollinator networks.
+
+The functions cover:
+- Initialization of agents (plants and pollinators) with random,
+  empirical, or regular spatial distributions.
+- Construction of bipartite plant–pollinator networks.
+- Evolution rules for agent movement and interaction.
+- Updating of network edges and weights over time.
+
+Typical workflow
+----------------
+1. Generate agents using initialization functions (e.g., `initial_pollinators_random`).
+2. Create a bipartite network with `initial_network`.
+3. Simulate dynamics with update functions (`update`, `update_totalinks`).
+4. Analyze resulting structures with network metrics or export to data frames.
+
+Notes
+-----
+- This module relies on classes defined in `classes.py` (e.g., `Agent_Plant`, `Agent_Pol`)
+  for representing agents.
+- The functions are designed to be flexible: randomization, classification of species,
+  and movement dynamics can be adapted depending on the scenario.
+- Networks are handled using NetworkX.
+
+Examples
+--------
+>>> from netbayesabm import modelling as mdl
+>>> generalists, poll_df = mdl.initial_pollinators_random(dist, 2, 50, 0, 10, 0, 10)
+>>> B = mdl.initial_network(poll_df["Specie"].unique(), plant_ids)
+>>> mdl.update_totalinks(100, env_pol, env_plant, B, 0, 10, 0, 10)
 """
 
 import numpy as np
