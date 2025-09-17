@@ -86,3 +86,6 @@ plot_priors(prior_specialist, prior_generalist, "example_priors")
 📜 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
+
+🔗 Links
+	•	Source code on GitHub [https://github.com/galeanojav/NetBayesABM]
