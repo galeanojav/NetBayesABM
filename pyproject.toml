@@ -11,7 +11,7 @@ requires-python = ">=3.9"
 
 authors = [
     { name = "Javier Galeano, ", email = "javier.galeano@upm.es" },
-    { name = "Blanca Correa-Arroyo, ", email = "blanca.arroyo@ebd.csic.es" },
+    { name = "Blanca Arroyo-Correa, ", email = "blanca.arroyo@ebd.csic.es" },
     { name = "Mario Castro, ", email = "marioc@iit.comillas.edu" }
 ]
 license = { text = "MIT" }
