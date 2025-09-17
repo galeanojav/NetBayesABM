@@ -70,6 +70,24 @@ prior_specialist = pd.Series(np.random.gamma(2, 2, size=1000))
 prior_generalist = pd.Series(np.random.gamma(2, 2, size=1000))
 plot_priors(prior_specialist, prior_generalist, "example_priors")
 ```
+
+## 📁 Example
+
+A complete analysis notebook is available in:
+
+📍 [`examples/example.ipynb`](examples/example.ipynb)
+
+It includes:
+
+- Data loading and filtering
+- Network construction
+- All main metrics (degree, strength, clustering, betweenness)
+- Fitted models and visualizations
+
+The example uses data (CSV files in `examples/Data/`).
+
+
+
 📊 Features
 - Agent and environment classes (Environment_plant, Environment_pol).
 - Network initialization and evolution functions.
