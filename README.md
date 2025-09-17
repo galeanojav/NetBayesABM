@@ -30,6 +30,7 @@ pip install -e .
 
 📖 Quick Example
 
+```bash
 import numpy as np
 import pandas as pd
 from netbayesabm.classes import Environment_plant, Environment_pol
@@ -68,3 +69,4 @@ remove_zero(B)
 prior_specialist = pd.Series(np.random.gamma(2, 2, size=1000))
 prior_generalist = pd.Series(np.random.gamma(2, 2, size=1000))
 plot_priors(prior_specialist, prior_generalist, "example_priors")
+```
