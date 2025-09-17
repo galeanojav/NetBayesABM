@@ -71,16 +71,16 @@ prior_generalist = pd.Series(np.random.gamma(2, 2, size=1000))
 plot_priors(prior_specialist, prior_generalist, "example_priors")
 ```
 📊 Features
-	•	Agent and environment classes (Environment_plant, Environment_pol).
-	•	Network initialization and evolution functions.
-	•	Visualization utilities for abundances, priors, and degree distributions.
-	•	Evaluation metrics (Hellinger, Jensen–Shannon, KL, Wasserstein, etc.).
-	•	Example notebooks for a quick start.
+- Agent and environment classes (Environment_plant, Environment_pol).
+- Network initialization and evolution functions.
+- Visualization utilities for abundances, priors, and degree distributions.
+- Evaluation metrics (Hellinger, Jensen–Shannon, KL, Wasserstein, etc.).
+- Example notebooks for a quick start.
 
  👩‍💻 Authors
-	•	Javier Galeano — [javier.galeano@upm.es]
-	•	Blanca Arroyo-Correa — [blanca.arroyo@ebd.csic.es]
-	•	Mario Castro — [marioc@iit.comillas.edu]
+- Javier Galeano — [javier.galeano@upm.es]
+- Blanca Arroyo-Correa — [blanca.arroyo@ebd.csic.es]
+- Mario Castro — [marioc@iit.comillas.edu]
 
 
 📜 License
