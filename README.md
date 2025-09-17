@@ -18,3 +18,7 @@ Once published on PyPI, you can install with:
 
 ```bash
 pip install NetBayesABM
+
+git clone https://github.com/<your-username>/NetBayesABM.git
+cd NetBayesABM
+pip install -e .
