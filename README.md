@@ -1,5 +1,7 @@
 # NetBayesABM
 
+[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://galeanojav.github.io/NetBayesABM/)
+
 **Agent-based models of plant–pollinator networks with Bayesian inference (ABC).**
 
 NetBayesABM is a Python library for simulating agent-based models (ABMs) of ecological networks, focusing on plant–pollinator interactions. It provides tools to:
@@ -17,7 +19,7 @@ NetBayesABM is a Python library for simulating agent-based models (ABMs) of ecol
 Once published on PyPI, you can install with:
 
 ```bash
-pip install NetBayesABM
+pip install netbayesabm
 ```
 
 For development (local clone):
@@ -27,6 +29,12 @@ git clone https://github.com/galeanojav/NetBayesABM.git
 cd NetBayesABM
 pip install -e .
 ```
+
+📖 Documentation
+
+Full documentation is available at:
+👉 ![NetBayesABM Docs](https://galeanojav.github.io/NetBayesABM/)
+
 
 📖 Quick Example
 
