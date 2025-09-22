@@ -1,0 +1,24 @@
+site_name: NetBayesABM
+repo_url: https://github.com/galeanojav/NetBayesABM
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocs-jupyter
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append("src")
+          options:
+            docstring_style: numpy
+            show_source: true
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage:
+      - Examples: usage/example.ipynb
+  - API Reference: api.md
