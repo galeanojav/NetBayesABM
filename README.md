@@ -29,13 +29,15 @@ git clone https://github.com/galeanojav/NetBayesABM.git
 cd NetBayesABM
 pip install -e .
 ```
+---
 
-📖 Documentation
+## 📖 Documentation
 
-Full documentation is available at:
+The full project documentation is available at:
 
-![NetBayesABM Docs](https://galeanojav.github.io/NetBayesABM/)
+👉 [NetBayesABM Documentation](https://<usuario>.github.io/NetBayesABM/)
 
+---
 
 📖 Quick Example
 
