@@ -33,7 +33,8 @@ pip install -e .
 📖 Documentation
 
 Full documentation is available at:
-👉 ![NetBayesABM Docs](https://galeanojav.github.io/NetBayesABM/)
+
+![NetBayesABM Docs](https://galeanojav.github.io/NetBayesABM/)
 
 
 📖 Quick Example
