@@ -39,4 +39,3 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/galeanojav/NetBayesABM"
 Repository = "https://github.com/galeanojav/NetBayesABM"
-Issues = "https://github.com/galeanojav/NetBayesABM/issues"
