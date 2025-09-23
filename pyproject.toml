@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "netbayesabm"
-version = "0.1.1"
+version = "0.1.2"
 description = "Agent-based models of plant–pollinator networks with Bayesian inference (ABC)."
 readme = "README.md"
 requires-python = ">=3.9"
@@ -39,3 +39,4 @@ dependencies = [
 [project.urls]
 Homepage = "https://github.com/galeanojav/NetBayesABM"
 Repository = "https://github.com/galeanojav/NetBayesABM"
+Issues = "https://github.com/galeanojav/NetBayesABM/issues"
